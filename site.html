@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seu Site de Amor</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <header>
+      <h1>T&E</h1>
+    </header>
+    <nav>
+      <a href="#sobre-nos">Sobre Nós</a> |
+      <a href="#medidor-amor">Medidor de Amor</a> |
+      <a href="#nossas-musicas">Nossas Músicas</a>
+    </nav>
+    <div class="container">
+      <section id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slide">
+                  <img src="fotos/1.jpg" alt="Foto 1">
+                </div>
+                <div class="slide">
+                  <img src="fotos/2.jpg" alt="Foto 2">
+                </div>
+                <div class="slide">
+                  <img src="fotos/3.jpg" alt="Foto 3">
+                </div>
+                <div class="descricao">
+                    <p>
+                        Para a pessoa que ilumina cada um dos meus dias,
+                    </p>
+                    <p>Desde o momento em que você entrou na minha vida, eu sabia que havia algo excepcional e extraordinário em você. Cada riso compartilhado, cada conversa profunda e cada momento juntos só fortaleceram esse sentimento que cresce em mim, até que finalmente eu não posso mais contê-lo.
+
+Hoje, através deste espaço virtual que é uma representação do que sinto por você, quero confessar que você tem uma parte de mim que ninguém mais jamais teve. É como se houvesse uma parede única entre nós, uma barreira que só você conseguiu transpor. E essa parte é meu coração, que agora bate mais forte do que nunca por você.
+
+É incrível como você conquistou um espaço tão especial em minha vida. Cada momento que compartilhamos se transforma em uma lembrança preciosa, guardada com carinho em minha mente e coração. A maneira como você enxerga o mundo, sua compaixão, sua inteligência e a forma como você me faz sentir quando estamos juntos - tudo isso me faz ter certeza de que você é uma pessoa única e inigualável.
+
+Hoje, neste site criado especialmente para expressar meus sentimentos, eu proclamo com todo o meu ser que eu te amo. Não são apenas palavras vazias, mas a essência do que sinto por você. Cada batida do meu coração sussurra o seu nome, e cada pensamento meu é acompanhado pela imagem radiante do seu sorriso.
+
+Saiba que não importa o que o futuro nos reserve, você sempre será a dona desse espaço exclusivo no meu coração. Este site é apenas uma pequena manifestação do amor que sinto por você, uma maneira de eternizar em palavras o que meu coração não pode conter.
+
+Agora e sempre, com um amor que é só seu,</p>
+                  </div>
+              </div>
+              
+          <button class="prev-btn">&#8249;</button>
+          <button class="next-btn">&#8250;</button>
+        </div>
+     <!-- ... Seu código HTML existente ... -->
+
+   <!-- Seção Medidor de Amor -->
+
+   <section id="medidor-amor">
+    
+    <div class="slider-container">
+        <p>MEDIDOR DE AMOR</p>
+      <input type="range" id="amor-slider" min="0" max="100" value="50" step="5" oninput="updateBattery(this.value)">
+      <div class="battery-container">
+        <div class="battery">
+          <div class="battery-level" id="battery-level"></div>
+        </div>
+        <div class="battery-percentage" id="battery-percentage">50%</div>
+      </div>
+      <button id="enviar-amor">Enviar</button>
+    </div>
+  <!-- ... O restante do seu código HTML ... -->
+  <section id="nossas-musicas">
+    <div class="album-container">
+        <p>NOSSAS MUSICAS</p>
+      <a href="https://open.spotify.com/playlist/1GjICfe7hoUlVbtY8PAUsL" target="_blank">
+        <img src="fotos/spotify.jpg" alt="Capa do Álbum">
+      </a>
+    </div>
+    <div class="love-message">
+        <p>Minha querida, as músicas que compartilhamos refletem o nosso amor e a beleza dos momentos que passamos juntos. Cada nota e melodia parecem contar a história do nosso relacionamento, repleto de alegria, cumplicidade e carinho.</p>
+        <p>Você é a pessoa que preenche meus dias com risos e amor. Cada batida do meu coração é um lembrete constante de quanto eu amo você. E através dessas músicas, quero expressar o quão profundo é o sentimento que tenho por você.</p>
+        <p>Que essas canções nos acompanhem em nossa jornada, lembrando-nos do que compartilhamos e inspirando-nos a construir um futuro cheio de felicidade e amor. Eu te amo mais do que as palavras podem expressar.</p>
+      </div>
+  </section>
+    </div>
+    <script src="site.js"></script>
+  </body>
+  </html>

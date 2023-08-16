@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #008080; /* Verde Água */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav {
+    background-color: #000; /* Preto */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  
+
+  #sobre-nos {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .foto-container {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      .carousel-container {
+        text-align: center;
+        position: relative;
+      }
+      
+      .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .carousel-item {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      .carousel-item.active {
+        opacity: 1;
+      }
+    /* Estilo do carrossel de fotos */
+  }
+  
+  .descricao {
+    margin-top: 20px; /* Espaçamento entre fotos e texto */
+    text-align: center;
+  }
+  
+  .descricao p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .slide img {
+    max-width: 500px; /* Largura máxima desejada */
+    height: auto;
+  }
+
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+    animation: fadeAnimation 1s ease-in-out; /* Adiciona animação de fade */
+  }
+ /* Estilos do slider */
+/* Estilos do slider */
+/* Estilos do slider */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Estilize o slider */
+  #amor-slider {
+    width: 80%;
+    height: 15px;
+    background: linear-gradient(to right, #ff5a5f 0%, #ff5a5f var(--val)%, #fff var(--val)%, #fff 100%);
+    border-radius: 5px;
+    outline: none;
+    appearance: none;
+    background-color: #ff0008;
+    position: relative;
+  }
+  
+  /* Estilos da bateria */
+  .battery {
+    width: 50px;
+    height: 80px;
+    background-color: #ccc;
+    position: relative;
+    border: 1px solid #000;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .battery-level {
+    width: 100%;
+    height: var(--battery-level, 50%);
+    position: absolute;
+    bottom: 0;
+    background-color: green;
+    transform-origin: bottom center;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .battery-percentage {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+/* Estilos do botão */
+#enviar-amor {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #enviar-amor:hover {
+    background-color: #006666;
+  }
+
+  #nossas-musicas {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .album-container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .album-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .album-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  @keyframes fadeAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #008080; /* Verde Água */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  #medidor-amor {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  #amor-slider {
+    width: 50%;
+  }
+  
+  #amor-valor {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+  
+
+  /* Estilos gerais */
+
+  
+  .conteudo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centraliza o texto no modo responsivo */
+  }
+  
+  .foto-container {
+    max-width: 100%;
+  }
+  
+  .descricao {
+    margin-top: 20px;
+  }
+  
+  .descricao p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+
+
+/* Estilos específicos para dispositivos móveis */
+@media screen and (max-width: 554px) {
+    /* Ajuste de margem para centralizar no modo responsivo */
+    .foto-container {
+      margin: 0 auto;
+    }
+  
+    .descricao {
+      margin: 10px auto;
+    }
+  
+    .slider-container {
+      margin: 0 auto;
+    }
+  
+    #amor-slider {
+      width: 100%; /* Ocupa toda a largura disponível */
+    }
+  }
+
+  /* Estilos do texto sobre o amor */
+.love-message {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .love-message p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
